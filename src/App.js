@@ -1,10 +1,13 @@
 import './App.css';
 
+import Layout from './Layout/Layout';
+import MainSection from './MainSection/MainSection';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world!</h1>
-    </div>
+    <Layout>
+      <MainSection />
+    </Layout>
   );
 }
 

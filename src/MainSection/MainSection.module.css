@@ -1,0 +1,11 @@
+.products h2 {
+  color: white;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.products ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
