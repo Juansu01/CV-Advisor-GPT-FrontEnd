@@ -21,7 +21,7 @@ const Chat = () => {
   const sendMessageToGPT = async (message) => {
     console.log(message)
     setIsGPTThinking(true);
-    const response = await fetch("http://localhost:4000//send-message-to-gpt", {
+    const response = await fetch("http://localhost:3000//send-message-to-gpt", {
       method: 'POST',
       body: JSON.stringify({ message }),
       headers: {

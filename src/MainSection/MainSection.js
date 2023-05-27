@@ -12,7 +12,7 @@ const MainSection = (props) => {
   const [showServerError, setShowServerError] = useState(false);
 
   const processCV = async (fileName) => {
-    const response = await fetch(`http://localhost:4000/initialize-context/${fileName}`, {
+    const response = await fetch(`http://localhost:3000/initialize-context/${fileName}`, {
       mode: 'cors',
       method: "POST",
     })
@@ -27,7 +27,7 @@ const MainSection = (props) => {
     try {
       const formData = new FormData()
       formData.append('file', file)
-      const response = await fetch("http://localhost:4000/save-cv", {
+      const response = await fetch("http://localhost:3000/save-cv", {
         mode: 'cors',
         method: "POST",
         body: formData
