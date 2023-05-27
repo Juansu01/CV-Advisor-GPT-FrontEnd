@@ -4,11 +4,11 @@ import Button from '../UI/Button';
 const MainHeader = (props) => {
   return (
     <header className={classes.header}>
-      <h1>CV Advisor GPT</h1>
+      <h1>CV Advisor for devs</h1>
       <nav>
         <ul>
           <li>
-            <Button />
+            <Button content='End Session' />
           </li>
         </ul>
       </nav>
