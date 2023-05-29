@@ -11,6 +11,12 @@ tips, and suggestions on how to make their CVs more attractive to recruiters.
 
 <img src="./readme_media/view1.png">
 
+- After clicking the Understood button, you will be prompted to upload your CV, and the backend will extract
+  all the information in it, for the GPT model to process.
+
+<img src="./readme_media/view2.png">
+<img src="./readme_media/view3.png">
+
 ### About the tech stack:
 
 - Frontend was built using React
