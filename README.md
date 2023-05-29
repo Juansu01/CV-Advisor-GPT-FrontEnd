@@ -22,6 +22,10 @@ tips, and suggestions on how to make their CVs more attractive to recruiters.
 
 <img src="./readme_media/view4.png">
 
+- Finally a chat will be displayed for you to ask questions based on the information inside your CV.
+
+<img src="./readme_media/view5.png">
+
 ### About the tech stack:
 
 - Frontend was built using React
