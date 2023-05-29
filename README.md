@@ -17,6 +17,11 @@ tips, and suggestions on how to make their CVs more attractive to recruiters.
 <img src="./readme_media/view2.png">
 <img src="./readme_media/view3.png">
 
+- After your CV is processed, the GPT model will be prompted to analyze the information inside it, so it can
+  provide you with valuable insights.
+
+<img src="./readme_media/view4.png">
+
 ### About the tech stack:
 
 - Frontend was built using React
