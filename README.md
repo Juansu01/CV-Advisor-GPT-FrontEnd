@@ -22,11 +22,11 @@ tips, and suggestions on how to make their CVs more attractive to recruiters.
 
 <img src="./readme_media/view4.png">
 
-- Finally a chat will be displayed for you to ask questions based on the information inside your CV.
+- Finally, a chat will be displayed for you to ask questions based on the information inside your CV.
 
 <img src="./readme_media/view5.png">
 
 ### About the tech stack:
 
 - Frontend was built using React
-- The backend is a simple REST API built with Flask
+- The [backend](https://github.com/Juansu01/CV-Advisor-GPT-BackEnd) is a simple REST API built with Flask
