@@ -2,12 +2,15 @@ import './App.css';
 
 import Layout from './Layout/Layout';
 import MainSection from './MainSection/MainSection';
+import { SessionContextProvider } from './context/session-context';
 
 function App() {
   return (
-    <Layout>
-      <MainSection />
-    </Layout>
+    <SessionContextProvider>
+      <Layout>
+        <MainSection />
+      </Layout>
+    </SessionContextProvider>
   );
 }
 

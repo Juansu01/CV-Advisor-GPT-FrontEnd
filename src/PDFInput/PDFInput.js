@@ -3,10 +3,11 @@ import { useState } from 'react';
 import Card from '../UI/Card';
 import Button from '../UI/Button';
 
+
 const PDFInput = (props) => {
-  const [fileName, setFileName] = useState('Choose CV')
+  const [fileName, setFileName] = useState('Choose CV');
   const [file, setFile] = useState(null);
-  const [showSubmitButton, setShowSubmitButton] = useState(false)
+  const [showSubmitButton, setShowSubmitButton] = useState(false);
 
   const fileInputChangeHandler = (event) => {
     event.preventDefault()

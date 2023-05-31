@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 import classes from './MainSection.module.css';
 import PDFInput from '../PDFInput/PDFInput';
 import Chat from '../Chat/Chat';
 import Card from '../UI/Card';
 import WelcomeCard from '../WelcomeCard/WelcomeCard';
+import SessionContext from '../context/session-context';
 
 const MainSection = (props) => {
   const [showPDFInput, setShowPDFInput] = useState(false);
@@ -14,6 +15,8 @@ const MainSection = (props) => {
   const [welcomeCardIsShowing, setWelcomeCardIsShowing] = useState(true);
   const [initialMessage, setInitalMessage] = useState("");
   const [chatIsLoading, setChatIsLoading] = useState(false);
+  const ctx = useContext(SessionContext);
+
 
   const processCV = async (fileName) => {
     setChatIsLoading(true);
@@ -25,6 +28,7 @@ const MainSection = (props) => {
       const json = await response.json()
       setInitalMessage(json.response);
       setChatIsShowing(true);
+      ctx.onStartSession();
     } else {
       setShowServerError(true);
     }
@@ -41,7 +45,7 @@ const MainSection = (props) => {
       })
       if (response.ok) {
         setShowPDFInput(false)
-        processCV(fileName)
+        await processCV(fileName);
       } else {
         setShowServerError(true);
       }

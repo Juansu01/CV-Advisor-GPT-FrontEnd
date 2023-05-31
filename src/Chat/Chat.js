@@ -54,7 +54,7 @@ const Chat = (props) => {
   }
 
   return (
-    <Card>
+    <Card className={styles.styles}>
       <div>
         <MainContainer>
           <ChatContainer className={classes.container}>
